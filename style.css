@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Change the background color as needed */
+    color: #333; /* Change the text color as needed */
+}
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2; /* Ensure the navigation is above the background image */
+    overflow: hidden; /* Clear floats inside the nav */
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+    background-color: #111;
+}
+
+
+.container{
+	width: 900px;
+	height: 400px;
+   background-color: white; /* Blue color with transparency */
+   justify-content: center;
+	align-items: center;
+	display:flex;
+	margin: 0 auto;
+	padding-left:50px;
+	padding-right:50px;
+	margin-top:150px;
+	opacity: 0.6;
+	position: relative; /* To enable positioning of background image */
+    z-index: 1; /* Ensure the container stays above the background image */
+
+
+}
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* background-image: url('img/bg01.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    z-index: 0; /* Ensure the background image stays behind the container */
+}
+.boy-icon-link {
+    position: absolute;
+    top: 18%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center the link */
+    z-index: 2; /* Ensure it's above other content */
+    text-align: center; /* Center the text */
+}
+
+.boy-icon {
+    width: 100px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+        
+		
+		
